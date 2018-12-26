@@ -2,6 +2,7 @@ module.exports = {
 
 	rules: {
 		"type-empty": [2, "never"], //type必填
+		"type-caes": [2, "lower-case"], //type小写
 		"type-enum": [2, "always", ["feat", "fix", "refactor", "chore", "docs", "test", "optimize", "build", "revert", "merge"]],
 		"header-max-length": [2, "always", 50], //header最大长度
 		"scope-max-length": [2, "always", 10], //作用域长度

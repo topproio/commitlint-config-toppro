@@ -11,5 +11,11 @@ module.exports = {
 		"footer-leading-blank": [2, "always"], //footer是在新的一行写
 
 		"subject-empty": [1, "never"] //subject必填
+	},
+	parserPreset: {
+	    parserOpts: {
+	      	headerPattern: /^(\w+)(#\s(.*))?$/,
+	      	headerCorrespondence: ['type', 'subject']
+	    }
 	}
 }

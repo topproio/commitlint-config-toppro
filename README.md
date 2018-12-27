@@ -1,5 +1,5 @@
 
-# commitlint-config-toppro
+# commitlint-config-abc
 > 规范你的提交信息，by基于Commitlint的config拓展
 
 ## Summary
@@ -18,8 +18,8 @@
 安装依赖，新建配置文件。
 
 ```sh
-yarn add @commitlint/cli commitlint-config-toppro husky --save
-echo "module.exports = {extends: ['commitlint-config-toppro']};" > commitlint.config.js
+yarn add @commitlint/cli commitlint-config-abc husky --save
+echo "module.exports = {extends: ['abc']};" > commitlint.config.js
 ```
 
 配置husky钩子，监听git信息提交

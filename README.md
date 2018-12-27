@@ -54,6 +54,7 @@ echo "module.exports = {extends: ['commitlint-config-toppro']};" > commitlint.co
 ## Why Use Commitlint Commits
 * 自动生成CHANGELOG
 * 建立更有条理提交信息
+* 帮助开发者了解项目信息
 * 帮助定位提交记录
 
 ## FAQ
@@ -61,5 +62,12 @@ echo "module.exports = {extends: ['commitlint-config-toppro']};" > commitlint.co
 ### 这会阻碍项目快速发展和快速迭代?
 它阻碍的是杂乱无章的快速提交，它能快速统一不同提交习惯的开发者的提交信息。
 
-### 提交中拥有多个信息类型?
+### 提交中能拥有多个信息类型?
 尽可能撤回其他的信息类型的修改，如果不行，选择信息类型的优先级是从开头到结尾
+
+### 如何快速查询提交类型的提交记录？
+```
+git log --pretty=format:"%s - %h" | grep -e ^[提交类型]
+```
+git log 是查询提交日志的信息命令,    
+--pretty=format是改命令的过滤参数 ```%```是提交说明 ```%h```日志的hash值

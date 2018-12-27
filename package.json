@@ -1,8 +1,8 @@
 {
-	"name": "commitlint-config-toppro",
+	"name": "commitlint-config-abc",
 	"version": "1.0.0",
 	"description": "git commitlint config",
-	"main": "index.js",
+	"main": "commitlint.config.js",
 	"repository": "git@github.com:z-ao/commitlint-config-toppro.git",
 	"author": "Lea <452224689@qq.com>",
 	"license": "MIT",

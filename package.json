@@ -1,10 +1,16 @@
 {
-	"name": "commitlint-config-abc",
+	"name": "commitlint-config-toppro",
 	"version": "1.0.0",
 	"description": "git commitlint config",
 	"main": "commitlint.config.js",
-	"repository": "git@github.com:z-ao/commitlint-config-toppro.git",
-	"author": "Lea <452224689@qq.com>",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/z-ao/commitlint-config-toppro.git"
+	},
+	"bugs": {
+		"url": "https://github.com/z-ao/commitlint-config-toppro/issues"
+	},
+	"author": "z-ao",
 	"license": "MIT",
 	"dependencies": {
 		"@commitlint/cli": "^7.2.1",
@@ -16,5 +22,14 @@
 		"hooks": {
 			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
 		}
+	},
+	"private": false,
+	"homepage": "https://github.com/z-ao/commitlint-config-toppro#readme",
+	"directories": {
+		"doc": "docs"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
 	}
 }

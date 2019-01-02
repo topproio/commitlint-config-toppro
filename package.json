@@ -19,8 +19,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-			"pre-commit": "npm run"
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
 		}
 	},
 	"private": false,
@@ -28,13 +27,11 @@
 	"directories": {
 		"doc": "docs"
 	},
-	"devDependencies": {},
+	"devDependencies": {
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"config": {
-    "commitizen": {
-      "path": "cz-customizable"
-    }
   }
 }

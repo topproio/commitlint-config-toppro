@@ -5,30 +5,25 @@
 	"main": "commitlint.config.js",
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/z-ao/commitlint-config-toppro.git"
+		"url": "git+ssh://github.com/topproio/commitlint-config-toppro"
 	},
 	"bugs": {
-		"url": "https://github.com/z-ao/commitlint-config-toppro/issues"
+		"url": "https://github.com/topproio/commitlint-config-toppro/issues"
 	},
 	"author": "z-ao",
 	"license": "MIT",
-	"dependencies": {
-		"@commitlint/cli": "^7.2.1",
-		"@commitlint/config-conventional": "^7.1.2",
-		"husky": "^1.2.1"
-	},
 	"husky": {
 		"hooks": {
 			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
 		}
 	},
 	"private": false,
-	"homepage": "https://github.com/z-ao/commitlint-config-toppro#readme",
+	"homepage": "https://github.com/topproio/commitlint-config-toppro/blob/master/docs/rule.md",
 	"directories": {
 		"doc": "docs"
 	},
-	"devDependencies": {},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+	"peerDependencies": {
+		"@commitlint/cli": "^7.2.1",
+		"husky": "^1.2.1"
 	}
 }

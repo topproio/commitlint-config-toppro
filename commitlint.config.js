@@ -1,4 +1,5 @@
 module.exports = {
+	
 	rules: {
 		"type-empty": [2, "never"], //type必填
 		"type-case": [2, "always", "lowerCase"], //type小写
@@ -20,3 +21,4 @@ module.exports = {
 	    }
 	}
 }
+

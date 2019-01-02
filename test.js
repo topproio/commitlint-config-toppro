@@ -1,1 +1,1 @@
-'测试type-enum2'
+'测试type-case'

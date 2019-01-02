@@ -2,9 +2,7 @@
 	"name": "commitlint-config-toppro",
 	"version": "1.0.0",
 	"description": "git commitlint config",
-	"files": [
-    "index.js"
-  ],
+	"main": "commitlint.config.js",
 	"repository": {
 		"type": "git",
 		"url": "git+ssh://git@github.com/z-ao/commitlint-config-toppro.git"

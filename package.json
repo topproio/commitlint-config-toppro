@@ -2,6 +2,9 @@
 	"name": "commitlint-config-toppro",
 	"version": "1.0.0",
 	"description": "git commitlint config",
+	"files": [
+    "index.js"
+  ],
 	"main": "commitlint.config.js",
 	"repository": {
 		"type": "git",
@@ -19,7 +22,8 @@
 	},
 	"husky": {
 		"hooks": {
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+			"commitmsg": "commitlint -e $GIT_PARAMS",
+			"pre-commit": "npm run lint"
 		}
 	},
 	"private": false,
@@ -29,6 +33,16 @@
 	},
 	"devDependencies": {},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	}
+		"clean": "exit 0",
+    "deps": "dep-check",
+    "pkg": "pkg-check",
+    "lint": "exit 0",
+		"start": "exit 0",
+		"test": "exit 0"
+	},
+	"config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
+  }
 }

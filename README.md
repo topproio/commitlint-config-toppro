@@ -1,28 +1,35 @@
 
 # commitlint-config-toppro
-> 规范你的提交信息，by基于Commitlint的config拓展
+> 规范提交信息的工具
+
+[![npm](https://img.shields.io/badge/license-MIT-yellowgreen.svg)]()
+[![npm](https://img.shields.io/badge/node-%3E%3D8-blue.svg)]()
+[![npm](https://img.shields.io/badge/npm-v6.4.1-yellow.svg)]()
+[![npm](https://img.shields.io/badge/husky-1.2.1-red.svg)]()
+[![npm](https://img.shields.io/badge/%40commitlint%2Fcli-7.2.1-blue.svg)]()
 
 ## Summary
 提交说明的结构如下所示：
 
 ```
-<type>[optons scope] [: optons subject]
+<type>([scope]): <subject>
 
-[options body]
+[body]
 
-[options footer]
+[footer]
 ```
 
-
-## Getting started
+## Getting Started
 安装依赖，新建配置文件。
 
 ```sh
 yarn add @commitlint/cli commitlint-config-toppro husky --save
+
+# Add file commitlint.config.js
 echo "module.exports = {extends: ['toppro']};" > commitlint.config.js
 ```
 
-配置husky钩子，监听git信息提交
+配置 husky 钩子，监听 `git commit`:
 
 ```sh
 # package.json
@@ -35,25 +42,37 @@ echo "module.exports = {extends: ['toppro']};" > commitlint.config.js
 
 ## Specification
 
-1. type是必须填写规定值且必须小写,例如 feat, fix
-2. scope是可选值，用```（）```包围，必须小写，必须10个字内
-3. subject是可选值，它的前缀是```:```+空格
-4. 整个信息头必须在50个字内，保障一行能显示全部，以便阅读
-5. body与footer是可选值，必须用一行隔开
-6. body必须在75个字内
-7. footer必须要50个字内，开头必须用```BREAKING CHANGE: ```或 ```closes # ```
+1. type 必填，且必须小写
+2. scope 是可选值，用 `()` 包围，必须小写，限定在 10 个字符内
+3. subject 必填，它的前缀是 `:` + 空格
+4. 信息头（type scope subject）必须在 50 个字符内，保障一行能显示全部，以便阅读
+5. body 与 footer 是可选值，必须用一行隔开
+6. body 必须在 75 个字符内
+7. footer 必须在 50 个字符内
 
+并且 `types` 规定以下值：
 
-> BREAKING CHANGE:  ```变动导致某功能不兼容```   
-> closes # ```修复那个缺陷```
+```
+'build',
+'chore',
+'ci',
+'docs',
+'feat',
+'fix',
+'perf',
+'refactor',
+'revert',
+'style',
+'test'
+```
 
 ## Rules
 
-[docs/rule](./docs/rule.md) 
+[详见文档](./rules/README.md)
 
 ## Why Use Commitlint Commits
-* 自动生成CHANGELOG
-* 建立更有条理提交信息
+* 帮助生成规范的 CHANGELOG
+* 建立更有条理的提交信息
 * 帮助开发者了解项目信息
 * 帮助定位提交记录
 

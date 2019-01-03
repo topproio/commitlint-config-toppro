@@ -1,8 +1,8 @@
 {
 	"name": "commitlint-config-toppro",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "git commitlint config",
-	"main": "commitlint.config.js",
+	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+ssh://github.com/topproio/commitlint-config-toppro"
@@ -10,7 +10,7 @@
 	"bugs": {
 		"url": "https://github.com/topproio/commitlint-config-toppro/issues"
 	},
-	"author": "z-ao",
+	"author": "z-ao, anngirl",
 	"license": "MIT",
 	"husky": {
 		"hooks": {
@@ -19,9 +19,6 @@
 	},
 	"private": false,
 	"homepage": "https://github.com/topproio/commitlint-config-toppro/blob/master/docs/rule.md",
-	"directories": {
-		"doc": "docs"
-	},
 	"peerDependencies": {
 		"@commitlint/cli": "^7.2.1",
 		"husky": "^1.2.1"

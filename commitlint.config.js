@@ -1,6 +1,5 @@
 
-const rules = require('./index');
+const rules = require('./index').rules;
 module.exports = {
-	rules: rules.rules
-}
-
+	rules: rules
+};

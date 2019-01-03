@@ -1,6 +1,6 @@
 {
 	"name": "commitlint-config-toppro",
-	"version": "1.0.1",
+	"version": "1.0.4",
 	"description": "git commitlint config",
 	"main": "index.js",
 	"repository": {
@@ -18,7 +18,7 @@
 		}
 	},
 	"private": false,
-	"homepage": "https://github.com/topproio/commitlint-config-toppro/blob/master/docs/rule.md",
+	"homepage": "https://github.com/topproio/commitlint-config-toppro",
 	"peerDependencies": {
 		"@commitlint/cli": "^7.2.1",
 		"husky": "^1.2.1"
